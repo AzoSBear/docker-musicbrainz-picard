@@ -113,6 +113,7 @@ RUN \
     # Compile MusicBrainz Picard.
     echo "Compiling MusicBrainz Picard..." && \
     cd /tmp/musicbrainz-picard && \
+    pip install --break-system-packages --upgrade pip setuptools wheel && \
     pip install --break-system-packages --no-build-isolation . && \
     # Needed by the BPM Analyzer plugin.
     pip install --break-system-packages aubio && \
