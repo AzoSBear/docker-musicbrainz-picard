@@ -107,7 +107,6 @@ RUN \
     # Patch MusicBrainz Picard.
     echo "Patching MusicBrainz Picard..." && \
     sed-patch 's/self.disable_autoupdate = None/self.disable_autoupdate = True/' /tmp/musicbrainz-picard/setup.py && \
-    sed-patch "s/TextOption('setting', 'ui_theme', str(UiTheme.DEFAULT)),/TextOption('setting', 'ui_theme', str(UiTheme.SYSTEM)),/" /tmp/musicbrainz-picard/picard/ui/options/interface.py && \
     # Compile MusicBrainz Picard.
     echo "Compiling MusicBrainz Picard..." && \
     cd /tmp/musicbrainz-picard && \
