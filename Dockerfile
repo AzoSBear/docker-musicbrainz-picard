@@ -60,7 +60,6 @@ WORKDIR /tmp
 # Install dependencies.
 RUN \
     add-pkg \
-        py3-qt5 \
         py3-pyaml \
         py3-mutagen \
         py3-jwt \
@@ -76,7 +75,7 @@ RUN \
         # For optical drive listing.
         lsscsi \
         # Needed for dark mode support.
-        adwaita-qt \
+        adwaita-qt6 \
         # A browser is needed.
         firefox-esr \
         # dbus is needed to allow multiple Firefox windows using the same
@@ -92,7 +91,11 @@ RUN \
 
 # Install MusicBrainz Picard.
 RUN \
-    # Install packages needed by the build.
+    # Install packages needed at runtime (kept in final image).
+    add-pkg \
+        py3-qt6 \
+        && \
+    # Install packages needed only for the build (removed afterward).
     add-pkg --virtual build-dependencies \
         build-base \
         python3-dev \
@@ -110,7 +113,7 @@ RUN \
     # Compile MusicBrainz Picard.
     echo "Compiling MusicBrainz Picard..." && \
     cd /tmp/musicbrainz-picard && \
-    pip install --break-system-packages . && \
+    pip install --break-system-packages --no-build-isolation . && \
     # Needed by the BPM Analyzer plugin.
     pip install --break-system-packages aubio && \
     cd /tmp && \
