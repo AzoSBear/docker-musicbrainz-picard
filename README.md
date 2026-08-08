@@ -1,4 +1,4 @@
-# Docker container for MusicBrainz Picard
+# Docker container for MusicBrainz Picard 3.0
 [![Release](https://img.shields.io/github/release/jlesage/docker-musicbrainz-picard.svg?logo=github&style=for-the-badge)](https://github.com/jlesage/docker-musicbrainz-picard/releases/latest)
 [![Docker Image Size](https://img.shields.io/docker/image-size/jlesage/musicbrainz-picard/latest?logo=docker&style=for-the-badge)](https://hub.docker.com/r/jlesage/musicbrainz-picard/tags)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jlesage/musicbrainz-picard?label=Pulls&logo=docker&style=for-the-badge)](https://hub.docker.com/r/jlesage/musicbrainz-picard)
