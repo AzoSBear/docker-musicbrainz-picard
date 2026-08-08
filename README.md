@@ -1,11 +1,6 @@
 # Docker container for MusicBrainz Picard 3.0
-[![Release](https://img.shields.io/github/release/jlesage/docker-musicbrainz-picard.svg?logo=github&style=for-the-badge)](https://github.com/jlesage/docker-musicbrainz-picard/releases/latest)
-[![Docker Image Size](https://img.shields.io/docker/image-size/jlesage/musicbrainz-picard/latest?logo=docker&style=for-the-badge)](https://hub.docker.com/r/jlesage/musicbrainz-picard/tags)
-[![Docker Pulls](https://img.shields.io/docker/pulls/jlesage/musicbrainz-picard?label=Pulls&logo=docker&style=for-the-badge)](https://hub.docker.com/r/jlesage/musicbrainz-picard)
-[![Docker Stars](https://img.shields.io/docker/stars/jlesage/musicbrainz-picard?label=Stars&logo=docker&style=for-the-badge)](https://hub.docker.com/r/jlesage/musicbrainz-picard)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/jlesage/docker-musicbrainz-picard/build-image.yml?logo=github&branch=master&style=for-the-badge)](https://github.com/jlesage/docker-musicbrainz-picard/actions/workflows/build-image.yml)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/JocelynLeSage)
-
+## WARNING THIS IMAGE USES THE BETA Musicbrainz Picard 3.0 which could lead to Crashes and Bugs from Picard itself or Compatibility with this image
+### Use at your own risk
 This project provides a lightweight and secure Docker container for
 [MusicBrainz Picard](https://picard.musicbrainz.org).
 
