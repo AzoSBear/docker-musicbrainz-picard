@@ -84,6 +84,10 @@ app:
           docker exec <container name> picard-cli -e load mbid://release/dbd0ce67-cae6-33eb-8f5a-1143a30c2353
           ```
   changelog:
+    - version: 26.08.2
+      date: 2026-08-17
+      changes:
+        - 'Updated baseimage to version 4.13.2.'
     - version: 26.08.1
       date: 2026-08-11
       changes:
